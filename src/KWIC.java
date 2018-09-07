@@ -42,7 +42,7 @@ public class KWIC {
                 wordArray = shiftLine(wordArray);
             }
         }
-	}
+    }
 	
     private String[] shiftLine(String[] wordArray)
     {
@@ -67,8 +67,8 @@ public class KWIC {
         Collections.sort(shiftedStrings);
     }
     
-	public static void main(String[] args) throws Exception {
-		KWIC kwic = new KWIC();
-		kwic.run();
-	}
+    public static void main(String[] args) throws Exception {
+        KWIC kwic = new KWIC();
+        kwic.run();
+    }
 }
