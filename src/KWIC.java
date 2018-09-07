@@ -2,35 +2,32 @@ import java.util.*;
 
 public class KWIC {
 
-	//global shared data here
+    //global shared data here
     List<String> inputs = new ArrayList<String>();
     List<String> shiftedStrings = new ArrayList<String>();
 
-	void run() throws Exception {
-	    readInputs();
-	    cicularShift();
-	    sortStrings();
-	    printOutputs();
-	}
+    void run() throws Exception {
+        readInputs();
+        cicularShift();
+        sortStrings();
+        printOutputs();
+    }
 	
-	private void readInputs() {
-	    int numberOfLine;      
-        
+    private void readInputs() {
+        int numberOfLine;
         Scanner sc = new Scanner(System.in);
         numberOfLine = sc.nextInt();
         sc.nextLine();
-        
-        for(int i = 0; i < numberOfLine; i++)
-        {
+        for(int i = 0; i < numberOfLine; i++) {
             String oneLine = sc.nextLine();
             inputs.add(oneLine);
         }
         sc.close();
 	}
 
-	private void printOutputs() {
-	    for (String line : shiftedStrings) {
-	        System.out.println(line);
+    private void printOutputs() {
+        for (String line : shiftedStrings) {
+            System.out.println(line);
 	    }
 	}
 	
