@@ -23,21 +23,20 @@ public class KWIC {
             inputs.add(oneLine);
         }
         sc.close();
-	}
+    }
 
     private void printOutputs() {
         for (String line : shiftedStrings) {
             System.out.println(line);
-	    }
-	}
-	
-	private void cicularShift() {
-	    for(int i = 0; i < inputs.size(); i++)
-        {
+        }
+    }
+
+    private void cicularShift() {
+        for(int i = 0; i < inputs.size(); i++) {
             String oneLine = inputs.get(i);
             String[] wordArray = oneLine.split("\\s+");
-            for(int j = 0; j < wordArray.length; j++)
-            {
+        
+            for(int j = 0; j < wordArray.length; j++) {
                 String modifiedLine = makeLine(wordArray);
                 shiftedStrings.add(modifiedLine);
                 wordArray = shiftLine(wordArray);
