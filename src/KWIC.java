@@ -8,7 +8,7 @@ public class KWIC {
 
     void run() throws Exception {
         readInputs();
-        cicularShift();
+        circularShift();
         sortStrings();
         printOutputs();
     }
@@ -31,7 +31,7 @@ public class KWIC {
         }
     }
 
-    private void cicularShift() {
+    private void circularShift() {
         for(int i = 0; i < inputs.size(); i++) {
             String oneLine = inputs.get(i);
             String[] wordArray = oneLine.split("\\s+");
